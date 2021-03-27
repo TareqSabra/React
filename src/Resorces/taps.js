@@ -1,0 +1,27 @@
+export const taps=[
+    {
+        tapName:"shop",
+        tapTitel:"HOME",
+        tapUrl:"#"
+    },
+    {
+        tapName:"shop",
+        tapTitel:"SHOP",
+        tapUrl:"#"
+    },
+    {
+        tapName:"page",
+        tapTitel:"PAGES",
+        tapUrl:"#"
+    },
+    {
+        tapName:"lookbook",
+        tapTitel:"LOOKBOOK",
+        tapUrl:"#"
+    },
+    {
+        tapName:"brands",
+        tapTitel:"BRANDS",
+        tapUrl:"#"
+    },
+]

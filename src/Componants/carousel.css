@@ -1,0 +1,11 @@
+.itemTitle{
+text-align: center;
+color: black;
+}
+.itemPicture{
+ margin-left: 20%;   
+}
+.itemPrice{
+    text-align: center;
+    color: red;
+    }
