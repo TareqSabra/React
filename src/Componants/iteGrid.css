@@ -1,0 +1,22 @@
+.containorGrid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.gridItemS{
+    margin: 5px;
+    width: 25%;
+    height: 30%;
+    text-align: center;
+}
+.itemPrice{
+    color: red;
+    text-align: center;
+}
+.itemName{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}

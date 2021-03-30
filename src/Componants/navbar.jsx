@@ -58,7 +58,9 @@ class NavbarT extends Component {
 
          </Navbar>
          
-         <Navbar expand="lg" variant="" bg="dark" className="mh-20">
+         <Navbar expand="lg" variant="dark" bg="dark" className="mh-20">
+         <Navbar.Toggle/>
+         <Navbar.Collapse>
         {taps.map((item,index)=>{
            return(
                <Navbar.Brand href={item.tapUrl} className={"ml-5 font-weight-bold text-light"}>
@@ -66,7 +68,7 @@ class NavbarT extends Component {
               </Navbar.Brand>
                  )
              })}
-        
+        </Navbar.Collapse>
         </Navbar>
          </div>
          );

@@ -24,7 +24,7 @@ function carousel({itemList}) {
            <div className="font-weight-bold itemTitle" >{item.imagesTitel}</div>
            </a>
            <br/>
-           <div className="font-weight-bold itemPrice" >{item.itemPrime}</div>
+           <div className="font-weight-bold itemPrice" >{item.itemPrice}</div>
            </React.Fragment>
            
        )

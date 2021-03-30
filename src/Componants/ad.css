@@ -1,0 +1,41 @@
+.Containor{
+    display: flex;
+    justify-content: center;
+}
+.adContainor{
+    position: relative;
+    display: flex;
+    text-align: center;
+    background-color: #1c242e;
+    height: 70px;
+    width: 50%;
+    
+}
+.adContainor span{
+    margin: auto;
+    font-weight: bolder;
+    color: white;
+    margin-left: 5%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.adLearnMore{
+    position: absolute;
+    right: 0;
+    top: 0%;
+    background-color: #ab1d2b;
+    width: 300px;
+    height: 100%;
+    border-top: 70px solid  #ab1d2b;
+    border-left: 70px solid #1c242e;
+    text-align: center;
+}
+.adLinkS{
+ position: absolute;
+ top: -47px;
+ left: 50px;
+ color: white;
+ font-weight: bold;
+
+}
