@@ -8,6 +8,7 @@ import {AudioSound} from "../Resorces/AudioSound"
 import Carousel from "./carousel"
 import Ad from "./adComponent";
 import ItemGrid from "./itemGrid"
+import Footer from "./footer";
 class ShowC extends Component {
     state = {  
        adText :"Save your moneys with super promortion,available every sunday in the weekend !",
@@ -49,21 +50,21 @@ class ShowC extends Component {
                 <div className="d-flex justify-content-center">
                     <div className="formCont text-center">
                        <form>
-                           <div className="fromMainText"></div>
+                           <div className="formMainText">Newsletter</div>
+                           <div className="fromsubText"> 
+                           Subscribe to receive coupons and gift cards
+                           </div>
                            <br/>
-                           <div className="fromsubText"></div>
-                           <br/>
-                        <label>
-                             Name:
-                             <input type="text" name="name" />
+                          <label>
+                             <input type="text" placeholder="Email adress" name="Email adress" className="formInput"/>
                              </label>
-                             <input type="submit" value="Submit" />
+                             <input type="submit" value="SUBSCRIBE" className="btn  btn-danger formButton"/>
                         </form>
                     </div>
                 </div>
+                <Footer></Footer>
             </div>
         );
     }
 }
- 
 export default ShowC;
