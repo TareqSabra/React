@@ -5,9 +5,12 @@ import "mdbreact/dist/css/mdb.css";
 import { MDBContainer, MDBRow, MDBCol ,MDBFooter} from "mdbreact";
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import NewS from '../Componants/newS'
 import PinterestIcon from '@material-ui/icons/Pinterest';
 const FooterPage = () => {
     return (
+      <React.Fragment>
+      <NewS/>
       <MDBFooter color="elegant-color" className="font-small pt-4">
         <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
@@ -128,6 +131,7 @@ const FooterPage = () => {
           </MDBContainer>
         </div>
       </MDBFooter>
+      </React.Fragment>
     );
   }
   

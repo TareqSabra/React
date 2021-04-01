@@ -4,6 +4,7 @@ import Nav from "../src/Componants/navbar";
 import Home from "../src/pages/mainPage";
 import Product from "../src/pages/product"
 import Footer from './Componants/footer';
+import NewS from './Componants/newS';
 class App extends Component {
     state = {  }
     render() { 
