@@ -1,13 +1,15 @@
 import  React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import MainPage from './pages/mainPage';
+import App from './app';
+import {BrowserRouter} from 'react-router-dom';
 //import Stuff from './Componants/carousel';
-
 ReactDOM.render(
-  <React.StrictMode>
-<MainPage></MainPage>
-  </React.StrictMode>,
+ <BrowserRouter>
+ <App/>
+ </BrowserRouter>
+
+ ,
   document.getElementById('root')
 );
 

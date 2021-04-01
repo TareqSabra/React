@@ -1,7 +1,9 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import '../Componants/carousel.css'
+import Product from "../pages/product"
 function carousel({itemList}) {
     const responsive = {
         0: { items: 1 },
@@ -13,19 +15,21 @@ function carousel({itemList}) {
    const cItems= itemList.map((item,index)=>{
        return(
            <React.Fragment>
-           <a href= {item.itemurl} ><img
+            <Link to={{ pathname :"/Products" ,state:item}}>
+            <img
            className="itemPicture"
            alt="ProductImg"
            src ={item.image}
            />
-           </a>
+             </Link>
            <br/>
-           <a href= {item.itemurl}>
+           <Link to={{ pathname :"/Products" ,state:item}}>
            <div className="font-weight-bold itemTitle" >{item.imagesTitel}</div>
-           </a>
+           </Link>
            <br/>
            <div className="font-weight-bold itemPrice" >{item.itemPrice}</div>
            </React.Fragment>
+
            
        )
     });
@@ -34,8 +38,7 @@ function carousel({itemList}) {
         mouseTracking
         disableDotsControls ={true}
         items={cItems}
-        responsive={responsive}
-    />
+        responsive={responsive}/>
     )
   }
   export default carousel;

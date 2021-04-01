@@ -25,7 +25,7 @@ class NavbarT extends Component {
               src={logo}
               width="120"
               height="70"
-              alt="React Bootstrap logo"
+              alt="logo"
              />
            </Navbar.Brand>
            <Navbar.Toggle/>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ShowC from "../Componants/showCase"
-import Navbar from "../Componants/navbar"
 class MainPage extends Component {
     constructor(props) {
         super(props);
@@ -9,7 +8,6 @@ class MainPage extends Component {
     render() { 
         return (
             <React.Fragment>
-                <Navbar ></Navbar>
                 <ShowC></ShowC>
             </React.Fragment>
           );

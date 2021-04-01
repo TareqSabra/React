@@ -62,7 +62,6 @@ class ShowC extends Component {
                         </form>
                     </div>
                 </div>
-                <Footer></Footer>
             </div>
         );
     }
