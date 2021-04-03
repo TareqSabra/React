@@ -1,8 +1,8 @@
 export const taps=[
     {
-        tapName:"shop",
+        tapName:"HOME",
         tapTitel:"HOME",
-        tapUrl:"#"
+        tapUrl:"/"
     },
     {
         tapName:"shop",

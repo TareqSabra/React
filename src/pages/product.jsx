@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import RemoveIcon from '@material-ui/icons/Remove';
 import AddIcon from '@material-ui/icons/Add';
@@ -73,7 +73,7 @@ class Product extends Component {
                       <input type="textarea"name="textValue" value={this.state.value} className="inputS"/>
                       <AddIcon className="icon" onClick={handelIncrement}/>
                       </div>
-                      <button className="btn btn-dark ButtonS">ADD TO CART</button>
+                     <Link to={{ pathname :"/ShCart" ,sc:{item:st,amount:this.state.value}}} ><button className="btn btn-dark ButtonS">ADD TO CART</button></Link> 
                   </div>
               </div>
               <br></br>

@@ -7,40 +7,46 @@ import img6 from "../Resorces/Images/products/cams&Lenses/6.jpg"
 
 export const gridItems =[
     {
-       itemName:"LENOVO ESSENTIAL 1080P",
-       itemImg:img1,
-       itemPrice:"$20",
-       itemUrl:"#",
+      imagesTitel:"LENOVO ESSENTIAL 1080P",
+      image:img1,
+      itemPrice:"$20",
+      itemUrl:"#",
+      itemDiscribtion:"good cam"
     },
     {
-        itemName:"WEBCAM 720P HD",
-        itemImg:img2,
+        imagesTitel:"WEBCAM 720P HD",
+        image:img2,
         itemPrice:"$50",
         itemUrl:"#",
+        itemDiscribtion:"good cam"
      },
      {
-        itemName:"ADESSO CYBER 1080P HD",
-        itemImg:img3,
+        imagesTitel:"ADESSO CYBER 1080P HD",
+        image:img3,
         itemPrice:"$40",
         itemUrl:"#",
+        itemDiscribtion:"good cam"
      },
      {
-        itemName:"EZVIZ C6TC WI-FI FHD 1080P 128GB",
-        itemImg:img4,
+        imagesTitel:"EZVIZ C6TC WI-FI FHD 1080P 128GB",
+        image:img4,
         itemPrice:"$100",
         itemUrl:"#",
+        itemDiscribtion:"good cam"
      },
      {
-        itemName:"CREATIVE LIVE! CAM SYNC 1080p",
-        itemImg:img5,
+        imagesTitel:"CREATIVE LIVE! CAM SYNC 1080p",
+        image:img5,
         itemPrice:"$58",
         itemUrl:"#",
+        itemDiscribtion:"good cam"
      },
      {
-        itemName:"LOGITECH C270I 720P HD",
-        itemImg:img6,
+        imagesTitel:"LOGITECH C270I 720P HD",
+        image:img6,
         itemPrice:"$110",
         itemUrl:"#",
+        itemDiscribtion:"good cam"
      },
 
 ]

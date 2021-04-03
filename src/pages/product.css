@@ -14,10 +14,11 @@
     font-size: 30px;
 }
 .productPrice{
-    font-weight: bold;
+    font-weight: bolder;
     color: red;
-    font-size: 30px;
+    font-size: 25px;
     font-family: monospace;
+    margin-left: 7px;
 }
 .productDiscribtion{
     font-weight: bolder;
