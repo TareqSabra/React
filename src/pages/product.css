@@ -1,50 +1,50 @@
-.ProductC{
-    height: auto;
+.ProductC {
+  height: auto;
 }
-.link{
-    color: #989898;
-    font-family: monospace;
+.link {
+  color: #989898;
+  font-family: monospace;
 }
-.linkC{
-    color: #989898;
-    font-family: monospace;
+.linkC {
+  color: #989898;
+  font-family: monospace;
 }
-.productTitle{
-    font-weight: bold;
-    font-size: 30px;
+.productTitle {
+  font-weight: bold;
+  font-size: 30px;
 }
-.productPrice{
-    font-weight: bolder;
-    color: red;
-    font-size: 25px;
-    font-family: monospace;
-    margin-left: 7px;
+.productPrice {
+  font-weight: bolder;
+  color: red;
+  font-size: 25px;
+  font-family: monospace;
+  margin-left: 7px;
 }
-.productDiscribtion{
-    font-weight: bolder;
-    font-family: monospace;
-    letter-spacing: .5px;
-    margin: 10px;
+.productDiscribtion {
+  font-weight: bolder;
+  font-family: monospace;
+  letter-spacing: 0.5px;
+  margin: 10px;
 }
-.amountC{
-    display: flex;
-    width: 100%;
-    height: 10%;
-    border-radius: 5px;
-    justify-content: center;
-    border-style: double;
-    border-width: .009px;
-    border-color: #989898;
-    margin: 10px;
+.amountC {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  border-radius: 5px;
+  justify-content: center;
+  border-style: double;
+  border-width: 0.009px;
+  border-color: #989898;
+  margin: 10px;
 }
-.inputS{
-    width: 10%;
+.inputS {
+  width: 10%;
 }
-.icon{
-    font-size: 25px;
-    color: #989898;
-    margin: 6px;
+.icon {
+  font-size: 25px;
+  color: #989898;
+  margin: 6px;
 }
-.ButtonS{
-    width:100%;
+.ButtonS {
+  width: 100%;
 }

@@ -18,7 +18,7 @@ export default function ItemGrid(){
                        <br/>
                        <div className="itemName">{item.imagesTitel}</div>   
                        </Link>
-                    <div className="font-weight-bold itemPrice" >{item.itemPrice}</div>
+                    <div className="font-weight-bold itemPrice" >{'$'+item.itemPrice}</div>
                    </div> 
                )
               })

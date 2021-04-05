@@ -1,5 +1,5 @@
 import React from 'react';
-import AliceCarousel from 'react-alice-carousel';
+import AliceCarousel from 'react-alice-carousel';   
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import '../Componants/carousel.css'
@@ -26,7 +26,7 @@ function carousel({itemList}) {
            <div className="font-weight-bold itemTitle" >{item.imagesTitel}</div>
            </Link>
            <br/>
-           <div className="font-weight-bold itemPrice" >{item.itemPrice}</div>
+           <div className="font-weight-bold itemPrice" >{'$'+item.itemPrice}</div>
            </React.Fragment>  
        )
     });

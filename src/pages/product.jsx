@@ -59,10 +59,10 @@ class Product extends Component {
                           <br/>
                       <div className="productTitle">
                       {st.imagesTitel}
-                      </div>
+                      </div>    
                       </div>
                       <div className="productPrice">
-                          <div>{st.itemPrice}</div>
+                          <div>{'$'+st.itemPrice}</div>
                       </div>
                       <br/>
                       <div className="productDiscribtion">
@@ -70,7 +70,7 @@ class Product extends Component {
                       </div>
                       <div className="amountC">
                       <RemoveIcon className="icon" onClick={handelDecrement}/>
-                      <input type="textarea"name="textValue" value={this.state.value} className="inputS"/>
+                      <input type="textarea" name="textValue" value={this.state.value} className="inputS"/>
                       <AddIcon className="icon" onClick={handelIncrement}/>
                       </div>
                      <Link to={{ pathname :"/ShCart" ,sc:{item:st,amount:this.state.value}}} ><button className="btn btn-dark ButtonS">ADD TO CART</button></Link> 
