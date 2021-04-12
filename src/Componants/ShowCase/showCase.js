@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import '../Componants/showCase.css'
-
-//import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
-import {LaptopTablet} from "../Resorces/LaptopTablet";
-import {AudioSound} from "../Resorces/AudioSound"
-import Carousel from "./carousel"
-import Ad from "./adComponent";
-import ItemGrid from "./itemGrid"
+import '../ShowCase/showCase.css'
+import {LaptopTablet} from "../../Resorces/LaptopTablet";
+import {AudioSound} from "../../Resorces/AudioSound";
+import Carousel from "../CarouselComponant/carousel"
+import Ad from "../adComponant/adComponent";
+import ItemGrid from "../GridComponant/itemGrid"
 class ShowC extends Component {
     state = {  
        adText :"Save your moneys with super promortion,available every sunday in the weekend !",

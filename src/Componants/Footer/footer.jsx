@@ -1,12 +1,12 @@
-import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
-import { MDBContainer, MDBRow, MDBCol ,MDBFooter} from "mdbreact";
 import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import NewS from '../Componants/newS'
 import PinterestIcon from '@material-ui/icons/Pinterest';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import { MDBContainer, MDBRow, MDBCol ,MDBFooter} from "mdbreact";
+import React from 'react';
+import NewS from '../newsettlerComponant/newS';
 const FooterPage = () => {
     return (
       <React.Fragment>

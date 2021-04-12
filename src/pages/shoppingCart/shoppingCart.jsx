@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
-import './shoppingCart.css'
 import RemoveIcon from '@material-ui/icons/Remove';
 import AddIcon from '@material-ui/icons/Add';
+import React, {Component} from 'react';
+import './shoppingCart.css'
 class Shopingcart extends Component {
     constructor(props) {
         super(props);

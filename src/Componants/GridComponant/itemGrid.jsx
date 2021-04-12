@@ -1,6 +1,6 @@
 import React from 'react';
-import './iteGrid.css'
-import {gridItems} from "./griditems"
+import '../GridComponant/iteGrid.css';
+import {gridItems} from "../../Resorces/griditems";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 export default function ItemGrid(){
     return(

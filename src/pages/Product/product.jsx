@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import RemoveIcon from '@material-ui/icons/Remove';
 import AddIcon from '@material-ui/icons/Add';
-import Tabs from "../Componants/taps"
+import React, {Component} from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Tabs from "../../Componants/tapsComponant/taps"
 import './product.css';
 
 

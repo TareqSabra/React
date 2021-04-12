@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import logo from '../Resorces/Images/logo.svg';
-import {taps} from '../Resorces/taps';
 import RepeatIcon from '@material-ui/icons/Repeat';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import Badge from '@material-ui/core/Badge';
+import React, { Component } from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import logo from '../../Resorces/Images/logo.svg';
+import {taps} from '../../Resorces/taps';
 class NavbarT extends Component {
     state={
         logo :logo,
@@ -50,25 +50,20 @@ class NavbarT extends Component {
                Your Cart
                <br></br>
                {this.state.cartValue}
-           </Navbar.Text>
-           </Navbar.Brand>
-          
-          </Navbar.Collapse>
-          
-
-         </Navbar>
-         
-         <Navbar expand="lg" variant="dark" bg="dark" className="mh-20">
-         <Navbar.Toggle/>
-         <Navbar.Collapse>
-        {taps.map((item,index)=>{
-           return(
-               <Navbar.Brand href={item.tapUrl} className={"ml-5 font-weight-bold text-light"}>
-                {item.tapTitel}
-              </Navbar.Brand>
-                 )
-             })}
-        </Navbar.Collapse>
+            </Navbar.Text>
+            </Navbar.Brand>
+            </Navbar.Collapse>
+            </Navbar>
+            <Navbar expand="lg" variant="dark" bg="dark" className="mh-20">
+            <Navbar.Toggle/>
+            <Navbar.Collapse>
+                {taps.map((item,index)=>{
+                     return(
+                         <Navbar.Brand href={item.tapUrl} className={"ml-5 font-weight-bold text-light"}>
+                             {item.tapTitel}
+                            </Navbar.Brand>
+                              )})}
+            </Navbar.Collapse>
         </Navbar>
          </div>
          );

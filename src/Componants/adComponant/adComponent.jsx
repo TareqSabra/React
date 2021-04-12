@@ -1,6 +1,6 @@
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import React from 'react';
 import "./ad.css";
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 function Ad({adText,adlink}) {
     return(
         <div className="Containor">

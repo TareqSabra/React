@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../Componants/form.css'
+import '../newsettlerComponant/form.css'
 class NewS extends Component {
     state = {  }
     render() { 
