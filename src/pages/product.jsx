@@ -73,7 +73,7 @@ class Product extends Component {
                       <input type="textarea" name="textValue" value={this.state.value} className="inputS"/>
                       <AddIcon className="icon" onClick={handelIncrement}/>
                       </div>
-                     <Link to={{ pathname :"/ShCart" ,sc:{item:st,amount:this.state.value}}} ><button className="btn btn-dark ButtonS">ADD TO CART</button></Link> 
+                     <Link to={{ pathname :"/Shoping-cart" ,sc:{item:st,amount:this.state.value}}} ><button className="btn btn-dark ButtonS">ADD TO CART</button></Link> 
                   </div>
               </div>
               <br></br>

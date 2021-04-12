@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route ,Switch} from 'react-router-dom';
 import Nav from "../src/Componants/navbar";
 import Home from "../src/pages/mainPage";
 import Product from "../src/pages/product"
@@ -10,12 +10,13 @@ class App extends Component {
     render() {
         return ( 
         < React.Fragment >
-            <Nav />
-            <div >
-            <Route path = "/" exact component = { Home } /> 
-            <Route path = "/Products" exact component = { Product }/>
-            <Route path = "/ShCart" exact component = { Shopingcart }/> 
-            </div> <Footer/>
+            <Nav/>
+            <Switch>
+            <Route path = "/Products" component = { Product }/>
+            <Route path = "/Shoping-cart"  component = { Shopingcart }/>
+            <Route path = "/"  component = { Home } /> 
+            </Switch>
+            <Footer/>
             </React.Fragment>
         );
     }
