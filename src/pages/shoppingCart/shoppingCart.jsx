@@ -5,43 +5,56 @@ import './shoppingCart.css'
 class Shopingcart extends Component {
     constructor(props) {
         super(props);
-        const {sc} = this.props.location
-        this.handleChange = this.handleChange.bind(this);
-        this.state.CartItems.push(sc)
-        this.state.item.price = sc.item.itemPrice;
-        this.state.item.Quantity= Number(sc.amount);
-        this.state.item.totalPrice= Number(this.state.item.price)*Number(this.state.item.Quantity)
-      }
+        const {sc} = this.props.location;
+        this.state = { 
+            item:{
+                Quantity: Number(sc.amount),
+                price: sc.item.itemPrice,
+                totalPrice: Number(sc.item.price)*Number(sc.item.Quantity) ,
+            },
+            CartItems :[sc],
+            tax: 5
+        };
+    }
     
-    state = { 
-        item:{
-            Quantity:0,
-            price:0,
-            totalPrice:0,
-        },
-        CartItems :[],
-        value:0,
-        tax: 5
-        }
-        handleChange(event){ this.setState({value: this.state.item.Quantity});  }
-    render() { 
-        const handelIncrement =()=>{
-            this.state.item.Quantity =this.state.item.Quantity +1;
-            console.log(this.state.item.Quantity)
-            this.state.item.totalPrice= Number(this.state.item.price)*Number(this.state.item.Quantity)
+    handelIncrement =()=>{
+        this.setState({
+            ...this.state,
+            item: {
+                ...this.state.item,
+                Quantity: (this.state.item.Quantity + 1),
+                totalPrice: Number(this.state.item.price)*Number((this.state.item.Quantity + 1))
+            }
+        })
+    }
+
+    handelDecrement =()=>{
+        if(this.state.item.Quantity <= 1){
+            this.setState({
+                ...this.state,
+                item :{
+                    ...this.state.item,
+                    Quantity: 1,
+                    totalPrice: Number(this.state.item.price)*Number((this.state.item.Quantity))
                 }
-        const handelDecrement =()=>{
-            if(this.state.item.Quantity <= 0){
-                this.state.value=0;
-                this.state.item.totalPrice= Number(this.state.item.price)*Number(this.state.item.Quantity)
-                console.log(this.state.item.Quantity)
-            }
-            else{
-                this.state.item.Quantity =this.state.item.Quantity-1;
-                this.state.item.totalPrice= Number(this.state.item.price)*Number(this.state.item.Quantity)
-                console.log(this.state.item.Quantity)
-            }
+                
+            })
         }
+        else{
+            this.setState({
+                ...this.state,
+                item :{
+                    ...this.state.item,
+                    Quantity: (this.state.item.Quantity - 1),
+                    totalPrice: Number(this.state.item.price)*Number((this.state.item.Quantity - 1))
+                }
+                
+            })
+        }
+
+    }
+    render() { 
+
         return ( 
         <div className="">
             <div className="container text-center">
@@ -79,11 +92,13 @@ class Shopingcart extends Component {
                             <h5 className="font-weight-bolder mt-2 ml-3">
                                 {'$'+it.item.itemPrice}
                             </h5>
-                            <RemoveIcon className="icon"/>
-                            <input type="textarea" name="textValue" defaultValue={it.amount} onChange={this.handleChange} className="inputS"/>
-                            <AddIcon className="icon"></AddIcon>
+                            <RemoveIcon onClick ={this.handelDecrement} className="icon"></RemoveIcon>
+                            <input type="text" name="textValue" value={this.state.item.Quantity}  className="inputS"/>
+                            <AddIcon  onClick ={this.handelIncrement} className="icon"></AddIcon>
                             <h5 className="font-weight-bolder mt-2 ml-3">
-                                {'$'+this.state.item.totalPrice}
+                                {'$'+this.state.item.totalPrice
+                                }
+                                {console.log(this.state.item.totalPrice)}
                             </h5>
                             </div>
                             </div>

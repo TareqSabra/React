@@ -16,8 +16,8 @@ class Product extends Component {
             this.setState({ value: this.state.value + 1 })
                 }
         const handelDecrement =()=>{
-            if(this.state.value <= 0){
-                this.state.value=0;
+            if(this.state.value <= 1){
+                this.state.value=1;
             }
             else{
                 this.setState({ value: this.state.value - 1 })
